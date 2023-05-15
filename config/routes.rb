@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :conversations, only: [:index, :show] do
+    member do
+      get 'messages', to: 'conversations#get_chats'
+    end
+  end
+
+  resources :chats, path: "messages", only: [:create]
 end
