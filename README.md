@@ -10,7 +10,7 @@ The challenge is make sure when you run `bundle exec rspec`, all result is green
 
 
 ## Test Result
-![Example Image](tmp/cache/result.png)
+![Example Image](./tmp/result.png)
 
 ## Note
 I have changed the Rspec code because in my case the code still get some error even the result is same on the criteria. I only changed the code, but not change the expect/criteria on the test
